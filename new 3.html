@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mark Zuckerberg Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('Mark le one.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("Mark le two.jpg");
+  min-height: 400px;
+}
+
+/* Third image (faktor) */
+.bgimg-3 {
+  background-image: url("Mark le three.PNG");
+  min-height: 400px;
+}
+
+/* Third image (saluran) */
+.bgimg-4 {
+  background-image: url("Mark4.jpg");
+  min-height: 400px;
+}
+
+/* Third image (saluran) */
+.bgimg-5 {
+  background-image: url("Mark6.jpg");
+  min-height: 400px;
+}
+
+/* Third image (saluran) */
+.bgimg-6 {
+  background-image: url("ABOUT ME.png");
+  min-height: 600px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 , .bgimg-5, .bgimg-6 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> LATAR BELAKANG</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> MOBILITAS SOSIAL</a>
+    <a href="#FAKTOR" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> FAKTOR PENDORONG</a>
+    <a href="#SALURAN" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> SALURAN MOBILITAS</a>
+    <a href="#CARA" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> CARA MOBILITAS SOSIAL</a>
+    <a href="#KESIMPULAN" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> KESIMPULAN</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> ABOUT ME</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#FAKTOR" class="w3-bar-item w3-button" onclick="toggleFunction()">FAKTOR</a>
+    <a href="#SALURAN" class="w3-bar-item w3-button" onclick="toggleFunction()">SALURAN</a>
+    <a href="#CARA" class="w3-bar-item w3-button" onclick="toggleFunction()">CARA MOBILITAS</a>
+    <a href="#KESIMPULAN" class="w3-bar-item w3-button" onclick="toggleFunction()">KESIMPULAN</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MARK <span class="w3-hide-small">ZUCKERBERG</span> 
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">BIOGRAPHY</h3>
+  <p class="w3-center"><em>“The biggest risk is not taking any risk"</em></p>
+  <p>WMark Zuckerberg merupakan pencipta social-networking website Facebook yang telah putus sekolah dari Universitas Harvard. Ketika Zuckerberg memasuki sekolah menengah di Phillips Exeter Academy, ia bertemu dengan temannya yaitu D’Angelo. Karena keduanya memiliki ketertarikan yang sama terhadap komputer, membuatnya berencana menciptakan sebuah program. Hal itu membawa kabar baik, pada tahun terakhirnya di Philips, Zuckerberg direkrut oleh Microsoft dan American Online untuk mengerjakan suatu proyek. Kecerdasan Zuckerberg membawanya kesempatan untuk berkuliah di Harvard dengan jurusan ilmu komputer dan psikologi. Setiap kali Zuckerberg mengajukan diri untuk membuat direktori tersebut, ia selalu ditolak oleh pihak Harvard karena alasan tertentu. Walaupun saat itu ditolak, Zuckerberg nggak pantang menyerah, ia diam-diam berhasil membuat CourseMatch, 
+    yaitu platform yang memudahkan orang-orang untuk berinteraksi.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Co-Founder</b></p><br>
+      <img src="Mark5.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-medium w3-padding-large">
+      <p> Di tahun kedua masalah kecil pun muncul, Zuckerberg dianggap mencuri karena memasukan data mahasiswa Harvard ke platform Facemash yang ia buat. Perbuatan Mark Zuckerberg memang nggak dibenarkan, tetapi ia justru termotivasi menciptakan platform baru yakni Facebook yang merupakan pengembangan dari Facemash. Seiring berjalannya waktu, Zuckerberg sangat terkejut, ternyata banyak orang yang menyukai platform buatannya. Melihat kesempatan ini, Zuckerberg berencana untuk mengembangkan sistem jaringan yang dibuatnya, inilah bagaimana awal mulanya nama Facebook diciptakan.          
+        Platform Facebook berhasil diciptakan Mark Zuckerberg dan teman-temannya di tahun 2004. Zuckerberg mengutarakan bahwa Facebook adalah jejaring sosial yang bertujuan untuk mempertemukan sesama mahasiswa di Harvard. Kepopuleran Facebook mengakibatkan Zuckerberg jadi kewalahan, ia dan temannya berhasil membuat Facebook menjaring di 30 kampus. Di tahun 2004 akhir, Facebook berhasil menggaet banyak orang, saat itu terdaftar sebanyak 1 juta pengguna dari berbagai kalangan. Keseriusannya dalam mengembangkan Facebook, kali ini Zuckerberg nggak sendiri, ia akan membuat Facebook lebih berkembang bersama teman-temannya. Layaknya proyek yang besar, mereka memilih untuk menyewa sebuah tempat di Palo Alto, California agar lebih fokus.Tetapi disinilah keputusan besar 
+        dimulai, sayangnya Mark Zuckerberg memilih untuk drop out dari Harvard demi fokus dan mengembangkan.</p>
+    </div>
+  </div>
+ 
+  
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">44.942</span><br>
+    Partners
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">ALL OUT OF</span><br>
+    Projects Done
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">1MIL+</span><br>
+    Happy Clients
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">2.9MIL+</span><br>
+    Meetings
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">MOBILITAS SOSIAL</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">MOBILITAS SOSIAL</h3>
+  <p class="w3-center"><em> Bentuk Mobilitas Sosial Pembagian bentuk mobilitas sosial didasarkan pada berpengaruh tidaknya hasil perpindahan status sosial yang dialami dengan derajat sosial yang dimiliki. Secara umum bentuk mobilitas sosial terbagi menjadi empat, yaitu vertikal, horizontal, antargenerasi, dan intragenerasi.
+  <BR><BR> 
+    1.	1.	Vertikal, Mobilitas sosial vertikal terbagi menjadi mobilitas sosial vertikal ke atas dan mobilitas sosial vertikal ke bawah. Dengan kata lain, terjadi perubahan status sosial yang bisa naik atau turun. Mobilitas vertikal ini dengan demikian merupakan perpindahan status sosial yang dipegang oleh seseorang atau kelompok ke status sosial lain yang tidak sama dengan status sebelumnya.
+  <BR><BR>
+    <B>Social climbing dari mark Z </B>: Dari cerita alur mark Zuckerberg ini dapat ditinjau dari segi “social climbing” dimana  dari seorang yang dari latar belakang yang biasa dan memiliki mimpi dimana dia bisa sukses dengan apa yang dibuatnya dan menjadi popular saat ini, pada saat dia berani meminjam dana dari donator untuk mengembangkan aplikasi facebooknya karena tanpa server maka programnya yang dibuat oleh Mark untuk membuat compare wajah di kampus Harvard menjadi sering error dan mengakibatkan aplikasi tidak berjalan sesuai dengan yang semestinya. Pada saat mark Z cuma bermimpi jika aplikasi ini akan menjadi besar dan memutuskan melakukan pinjaman, walaupun dia sendiri belum tahu kapan program tersebut bisa menjadi bagus dan begitu berkembang tapi dia memiliki pandangan dimana pada saat itu teknologi internet pasti berkembang dan program yang dikembangkan pasti bisa disukai oleh banyak orang. Dari bentuk ini sesuai dengan teori social climbing bahwa mark yang pertamanya tidak memiliki prestasi di kampus membuat gebrakan baru dengan membuat aplikasi yang bisa digunakan oleh semua orang dan mark berkeyakinan bahwa aplikasi yang dia buat akan menjadi besar dan terbukti dalam waktu 3 bulan aplikasi telah banyak diunduh oleh banyak orang di seluruh dunia. Dan setelah mendapatkan kucuran dana maka Tempat kantor facebook berpindah ke Palo Alto California yang sebelumnya masih di Harvard <BR><BR>
+    <B>Social sinking dari mark z </B> : Dengan seiring berjalannya perkembangan facebook, mark z, dan karena mark sendiri dari latar belakang yang bukan merupakan organisasi dan bertumbuh bersama rekan Eduardo Saverin maka pada saat dia bertumbuh besar dan berkembang dia tidak mampu menghargai teman yang seperjuangan untuk menghasilkan algoritma dari program tersebut. Selain itu mark, juga membuat keputusan dimana dia melepaskan teman Eduardo Saverin yang tidak satu visi dan misi dengan dia, walaupun Eduardo Saverin tersebut yang membantu mark agar bisa terciptanya suatu program yang sekarang lebih banyak dikenal dengan FACEBOOK . Hal ini sesuai dengan definisi social sinking dimana mengalami penurunan derajat dari seseorang yang seharusnya bisa dia capai. Karena Eduardo saverin selepas dari mark, dia mendirikan perusahaan baru yaitu ventura B Capital yang jauh tidak berharga dibandingkan dengan Facebook saat ini.  <br> 
+  <BR><BR>
+    2.	Horizontalnya, perpindahan status sosial yang dialami seseorang atau suatu kelompok tidak akan mengubah derajat sosialnya atau akan tetap sejajar seperti sebelumnya.
+  <BR><BR>
+    Ide pertama kali mendirikan facebook itu adalah ide yang bukan dari original mark sendiri melainkan dari teman kampusnya yaitu Cameron dan tyler winklevoss berserta mitra bisnisnya divya Narendra yang memiliki ide mengenai pertemanan di dunia maya namun mereka belum bias mengimplementasikan dan meminta Mark bergabung dengan mereka, namun mark z mengambil ide tersebut dan mengembangkan nya sendiri bersama Dustin Moskovitz, Chris Hughes dan Eduardo Saverin  dan karena kejengkelan dengan teman dan mantan pacarnya yang kurang bersahabat di kampus mulailah dengan aplikasi compare wajah teman yang ada di kampusnya dan hingga aplikasi tersebut ramai di pakai oleh banyak mahasiswa dari beberapa universitas nama aplikasi tersebut adalah FACEMASH.
+    Dengan hasil ini bisa diliat dengan kesuksesan yang dicapai mark saat ini memang merupakan capain yang luar biasa dimana saat usianya belum menginjak 30 tahun dia sudah termasuk menjadi salah satu milioners yang dikenal seluruh dunia namun mark sampai saat ini tidak pernah melakukan dan menonjolkan status social dia bahkan dia melakukan donasi sebesar 99% dari total pendapatan yang ia miliki.
+
+</em></p><br>
+  
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="Meeting Emmanuel Macron (President of France).png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Meeting Emmanuel Macron (President of France)">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="Fundemental Physics award.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Fundemental Physics award">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="Zuck playing VR.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Zuck playing VR">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="The Pandemic.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The Pandemic">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="Zuck Sauce.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Zuck Sauce">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="Meta VR.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Meta VR">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="Ai launch.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="launch the Kempner Institute for AI research at Harvard">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="Weekend on the lake.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt=" Zuck's weekend on the lake">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">FAKTOR</span>
+  </div>
+</div>
+
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="FAKTOR">
+  <h3 class="w3-center">FAKTOR PENDORONG</h3>
+  <p class="w3-center"><em>“The biggest risk is not taking any risk"</em></p>
+  <p><B>Kemudahan Akses Pendidikan</B> , Semakin tinggi kualitas sistem pendidikan di negara tersebut, semakin besar peluang setiap warga negara untuk mengenyam pendidikan yang layak. Pendidikan adalah alat yang baik untuk setiap orang yang dapat mencapai mobilitas sosial yang lebih besar. Sebaliknya, jika akses pendidikan sedikit, sulit juga untuk mengubah status sosial seseorang ke yang lebih tinggi.
+    <BR><BR>
+      Pada waktu Mark Z di Harvard, Zuckerberg menyabotase data mahasiswa Harvard dan memasukkannya ke dalam website yang ia buat bernama Facemash. Sejumlah foto rekan mahasiswanya terpampang di situ. Tak lupa ia membubuhkan kalimat yang meminta pengunjungnya menentukan mana dari foto-foto ini yang paling “hot”. Pancingannya mengena. Dalam tempo empat jam sejak ia meluncurkan webiste itu tercatat 450 orang mengunjungi Facemash dan sebanyak 22.000 foto mereka buka. Pihak Harvard mengetahuinya dan sambungan internet pun diputus. Zuckerberg diperkarakan karena dianggap mencuri data. Oleh karena itu, dari Faktor pendorongnya itu menunjukkan bahwa Mark Z mulai meningkatkan mobiltas sosialnya dengan Akses equipment yang tersedia di Harvard untuk membuat website & dapat mengembangkan idenya dengan Eduardo Saverin untuk membuat Facebook. Dengan semua fasilitas yang diterima dari Harvard serta akses untuk membuat aplikasi ini dia harus meminta bantuan teman nya Dustin Moskovitz, Chris Hughes serta mencari di dalam perpustakaan Harvard untuk membuat sebuah algoritma yang nantinya bisa digunakan dengan seefisien mungkin oleh penggunanya. </p>
+  <BR>
+  <p><B>Faktor Individual (Motivasi Individu)</B> 
+    dalam kaitannya dengan kualitas individu dalam hal sikap, pengetahuan dan keterampilan. Seseorang dilahirkan dalam posisi sosial yang sama dengan orang tuanya. Nah, jika seseorang tidak puas dengan status sosial yang diwariskannya, mereka bisa berusaha meraih status sosial yang lebih tinggi. Sampai saat ini, pendidikan dipandang sebagai lift sosial atau sarana yang dapat membuat manusia menjadi individu yang lebih kompeten dan meningkatkan status sosialnya di masyarakat.
+   <BR><BR>
+
+    Di Harvard inilah Zuckerberg menemukan ide membuat buku direktori mahasiswa online karena universitasnya tak membagikan face book (buku mahasiswa yang memuat foto dan identitas mahasiswa di universitas itu) pada mahasiswa baru sebagai ajang pertemanan di antara mereka. Namun setiap kali ia menawarkan diri membuat direktori itu, Harvard menolaknya. “Mereka mengatakan punya alasan untuk tidak mengumpulkan informasi (mahasiswa) ini,” ujar Zuckerberg kemudian. Meski ditolak ia selalu mencari cara untuk mewujudkannya. “Saya ingin menunjukkan kalau hal itu bisa dilakukan,” lanjutnya soal kengototannya membuat direktori itu. Dari ini Mark Z mempunyai Sikap yang sangat fleksibel, sehingga itu menjadi salah satu kunci kesuksesan Zuckerberg dalam mengembangkan Facebook hingga seperti sekarang. Meski fokus pada tujuan awal untuk menghubungkan banyak orang dengan lebih mudah, Facebook juga dikembangkan dari segi bisnis. Selain factor diatas, Mark sendiri menginginkan untuk melakukan perubahan menjadi lebih besar dengan mencari donator selain dari teman seperjuangannya dia yaitu Eduardo Saverin karena dana dari Eduardo dirasa belum cukup untuk memenuhi perkembangan aplikasi Mark.</p>  
+
+</div>
+ 
+<!-- Fourth Parallax Image with Portfolio Text -->
+<div class="bgimg-4 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">SALURAN</span>
+  </div>
+</div>
+
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="SALURAN">
+  <h3 class="w3-center">SALURAN MOBILITAS</h3>
+  <p class="w3-center"><em></em></p>
+  <P> <B>Saluran Mobilitas </B>, mengacu pada sekelompok orang atau organisasi kelembagaan yang berhasil mencapai tujuannya dengan cara yang membawa perubahan dan menciptakan proses mobilitas sosial di masyarakat</P>
+  <BR>
+  <p><B>Organisasi Keahlian</B> 
+    , Kegiatan organisasi keahlihan dapat menjadi saluran akses mobilitas sosial karena ada orang-orang yang berkumpul dan memiliki profesi yang sama dan berjuang secara bersatu dan kuat untuk profesinya. Contoh organisasi profesi tersebut adalah Persatuan Guru Republik Indonesia (PGRI). Misi PGRI adalah memperjuangkan pendidikan di Indonesia, memperjuangkan hak kesejahteraan guru dan menjadi fasilitator pendidikan di Indonesia.
+    <BR><BR>
+      Jadi Mark Zuckerberg sebelum menciptakan Facebook, dia merekrut teman-teman sekolah dari Harvard yaitu Chris Hughes, Andrew McCollum, Dustin Moskovitz, Eduardo Saverin. Dari ini Mark & anggota para ahlinya mendirikan Facebook di tahun 2004 dengan tujuan untuk menyediakan buku wajah secara online bagi mahasiswa untuk terhubung dan berbagi informasi. Mark Zuckerberg dengan anggota pendiri Facebook menjalankan situs dari kamar asrama di Universitas Harvard hingga Juni 2004. Tahun itu Zuckerberg keluar dari perguruan tinggi dan memindahkan perusahaan ke Palo Alto, California. Pada akhir tahun 2004, Facebook memiliki 1 juta pengguna. Sesuai dengan definisi organisasi keahlihan mark mampu menarik beberapa teman2nya yang memiliki kemampuan untuk membentuk suatu kantor yang memiliki 1 visi dan misi ingin membagikan foto kita ke seluruh dunia.
+
+  </p>
+  <BR>
+  <p><B>Lembaga pendidikan</B> 
+    Adalah saluran yang konkret dari mobilitas vertikal ke atas. Bahkan saluran mobilitas sosial ini sering dianggap sebagai social elevator. Maksudnya lembaga pendidikan bisa mengubah seseorang yang semula berkedudukan rendah menjadi lebih tinggi.
+    <BR><BR>
+      Untuk mengimbangi minat Zuckerberg yang berkembang pada komputer, orang tuanya menyewa tutor komputer pribadi David Newman untuk datang ke rumah seminggu sekali dan bekerja dengan Zuckerberg. Zuckerberg kemudian belajar di Phillips Exeter Academy, sebuah sekolah persiapan eksklusif di New Hampshire. Di sana ia menunjukkan bakat dalam anggar, menjadi kapten tim sekolah. Dia juga unggul dalam sastra, mendapatkan diploma dalam bidang klasik. Namun Zuckerberg tetap terpesona oleh komputer dan terus bekerja mengembangkan program baru. Saat masih SMA, dia menciptakan versi awal dari perangkat lunak musik Pandora, yang dia beri nama Synapse. Lembaga pendidikan terakhir mark adalah kuliah di Harvard University dimana berkumpul dengan teman2 yang dibidang Komputer dan memiliki ide yang cemerlang untuk aplikasi yang belum pernah ada dan mampu membuatnya dan dikembangkan. Sesuai dengan dengan definisi tersebut menunjukkan jika adanya fasilitas pendidikan yang ada namun tidak memiliki kemauan dan DREAM maka hal itu belum bisa menjadikan mark menjadi lebih diantara teman di Harvard dan meningkatkan status sosialnya. </p>  
+
+</div>
+
+<!-- Fifth Parallax Image with Portfolio Text -->
+<div class="bgimg-5 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CARA MOBILITAS SOSIAL</span>
+  </div>
+</div>
+
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="CARA">
+  <h3 class="w3-center">CARA MOBILITAS NASIONAL</h3>
+  <p class="w3-center"><em></em></p>
+  <p><B>Perubahan Tempat Tinggal</B> Sebelum menjadi facebook seperti saat ini mark hanyalah seorang pemuda yang tinggal di asrama universitas dan tinggal di asrama Bersama teman temannya dan setelah facebook telah berkembang dan mulai terkenal, mark mengusahakan untuk meminjam property yang digunakan sebagai kantor serta tempat tinggal dia, Namun pada saat beranjak menjadi lebih besar lagi, Mark bertemu dengan calon istrinya dimana dia merupakan seorang dari jurusan kedokteran, dan tepat sebelum melamar calon istrinya tersebut 1 hari sebelumnya merupakan penluncuran pertama facebook di bursa saham, dimana pada saat itu begitu facebook IPO maka investor banyak sekali membeli dan membuat facebook menjadi sangat kaya. 
+     <BR><BR>
+      Pada bulan Mei 2011 setahun sebelum Mark Zuckerberg menikahi Priscilla Chan, lelaki kelahiran 1984 ini membeli sebuah rumah seluas 5.617 kaki persegi yang terletak di California, Amerika Serikat. Rumah itu dibeli seharga $7 juta atau setara dengan Rp 100 miliar. Meski interior dalam rumah besarnya tidak mencolok seperti rumah kebanyakan miliarder, namun rumah miliknya tersebut telah dilengkapi dengan berbagai fasilitas mewah. Salah satu fasilitas yang tak biasa, yakni kolam renang air asin dan ruang berjemur kaca.
+  </p>
+  <BR>
+  <p><B>Bergabung Dengan Organisasi Sosial</B> Pada saat facebook sebelum menjadi seperti saat ini, mark pada tahun 2015 ketika putri pertama mereka lahir, zuck dan istrinya menyumbangkan 99% sahamnya di facebook untuk kegiatan acara amal melalui organisasi mereka berdua yaitu chan Zuckerberg Initiative
+  <BR><BR> Namun walaupun pada tahun 2015 telah menyumbangkan seluruh sahamnya ke badan organisasi amal tapi saat ini mark Zuckerberg masih memiliki total kekayaan mencapai 103juta dollar amerika. Dengan artian meskipun dia menyumbangkan seluruh sahamnya mereka namun mereka mark merupukan orang terkaya ke 6 di dunia.
+  <BR><BR> Dan yang terakhir pada saat covid-19 melanda seluruh dunia, mark zuckerberg ikut dalam bill dan Melinda gates foundatiaon sebesar 25juta dollar amerika yang digunakan untuk melakukan ujicoba terhadap pandemic yang dihadapi saat itu serta 25 juta dollar amerika untuk membantu jurnalis yang terkena imbas pandemic serta 75 juta dollar amerika untuk beriklan di surat kabar nasional agar membantu koran local dimana saat itu facebook memilik pangsa pasar yang berbeda.
+  <BR><BR> Dari perubahan tempat tinggal dan bergabungnya dengan organisasi social menunjukkan bahwa mark telah berubah dari yang sebelumnya tidak dikenal oleh orang hingga saat ini tidak ada yang tidak mengenal dia selama orang tersebut menggunakan Facebook selain itu mark berubah menjadi pribadi yang jauh lebih bagus karena mampu memberikan lowongan pekerjaan bagi ribuan orang yang bekerja di kantornya namun dia tidak pernah membuat perubahan terhadap tingkah lakunya yang masih humble dan bersahabat.
+  </p>  
+
+</div>
+
+<!-- sixth Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">KESIMPULAN</span>
+  </div>
+</div>
+
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="KESIMPULAN">
+  <h3 class="w3-center">KESIMPULAN</h3>
+  
+  <p><B>Memiliki kepedulian dengan lingkungan sekitar</B> walaupun mark memeiliki kekayaan yang tak terkira, ia dan istri Priscilla Chan mendanai USD4,2 juta atau sekitar Rp603 miliar untuk program pekerjaan bagi penduduk daerah di Hawaii. Program ini pun mendukung hingga 400 pekerja. Namun, tetap saja yang bekerja pun tidak sembarangan. Pasalnya, mereka yang terpilih akan ditempatkan di pekerjaan sementara dan akan menerima gaji mingguan serta asuransi kesehatan. Artinya Mark bukan mau mengeruk kekayaan terus tapi dia selalu ingat berbagi dengan para orang2 yang kurang untuk mendapatkan pekerjaan dan hidup yang lebih layak. </p>
+  <BR><BR>
+  <p><B>Pantang Menyerah dan Selalu Optimis</B> Mark di awal kariernya dia juga sempat mengalami kendala dengan memperoleh dana untuk pengembangan bisnis nya. Namun Mark selalu berusaha bahkan selalu mencari orang yang sanggup membantu dia dalam mengembangkan bisnisnya. Walaupun dia sendiri belum yakin akan mendapatkan investor. </p>
+  <BR><BR>
+  <p><B>tidak cepat puas dan cepat melakukan inovasi dan perubahan</B> Masa keemasan facebook begitu cepat sehingga muncul kompetitor dan mengganggu kinerja kemajuan dari facebook (misal pada saat timbulnya aplikasi Chatting Whatsapp, maka mark pun mengakuisisi whatsapp, selain itu juga mark mengakuisisi instagram) sehingga sampai saat ini mark pun masih bisa bertahan dengan banyaknya persaingan di dunia maya. Jika dia cepat berpuas diri mungkin akan sama dengan nokia dan blackberry</p>
+  <BR><BR>
+  <p><B>percaya pada dirimu sendiri</B> Tidak ada yang bisa mengetahui dan mengerjakan segala sesuatu dengan kekuatan diri sendri namun melainkan butuh dukungan teman, keluarga bahkan tim kerja kita maka kira pasti bisa menyelesaikannya. Itulah yang menyebabkan Mark mampu berkembang secara cepat dan menjadi kokoh pada saat dia mencapi puncak karirnya. </p>
+  <BR><BR>
+  <P>
+  <BR>
+    <B><center>Kaitan Dengan WKA  </center></B><BR>
+    <center><I>"In social mobility, we got something that we deserved, something that we earned. But Christ gave us something that we don't deserve, something that we don't earn” </I></center>
+    <p class="w3-center"><BR><BR>
+   Dalam mobilitas sosial ini, banyak pelajaran yang dapat kita petik serta bisa kita terapkan dalam kehidupan kita. Jika kita melihat lebih jauh tentang kisah kesuksesan Mark Zuckerberg di usia muda nya merupakan contoh yang baik bagi kita generasi millenial saat ini, tetapi dibalik kisah sukses seseorang maka terdapat jalan yang terjal dan berliku serta pengorbanan yang harus ditempuh oleh sesorang tersebut untuk mencapai puncak kesuksesannya. Dan kita sebagai pengikut kristus, kita harus lebih percaya bahwa Tuhan tidak pernah memberikan cobaan melebihi batas kemampuan diri kita sehingga jika terjadi kesulitan di tengah jalan, janganlah cepat berputus asa melainkan lebih mendekatkan diri kepada sang kristus karena Tuhan telah memberikan jalan yang ada di depan kita namun kitalah sebagai manusia tidak pernah mendengarkan perintah Tuhan bahkan menghiraukan sehingga kita terjatuh dan tersesat Sebagai penutup dan setelah kita memahami mengenai mobilitas sosial, kita  perlu selalu bersyukur terhadap semua jalan yang kita lalui baik buruk ataupun bagus, berliku maupun enak dilalui, Karena TUHAN selalu menyertai Kita
+
+  </P>  
+
+
+</div>
+
+
+<!-- seventh Parallax Image with Portfolio Text -->
+<div class="bgimg-6 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">ABOUT ME</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">My Contact</h3>
+  <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="Me.jpg" class="w3-image w3-round" style="width:100%">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> dave.siaoo.0063523729@sdh.sch.id<br>
+        <i class="fa fa-search fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Kelas 11 IPS I<br>
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Sekolah Dian Harapan<br>
+      </div>
+      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a class="w3-button w3-large w3-black" href="https://web.facebook.com/profile.php?id=100090922744402" title="Facebook"><i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <a class="w3-button w3-large w3-black" href="https://www.instagram.com/evad_zitzat/" title="instagram"><i class="fa fa-instagram w3-hover-opacity"></i>
+          <a class="w3-button w3-large w3-black" href="https://id.pinterest.com/jctitandave/" title="pinterest"><i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  </div>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
